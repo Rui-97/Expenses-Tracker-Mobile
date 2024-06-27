@@ -6,6 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "runtimeVersion": "exposdk:49.0.0",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -21,10 +22,29 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "The app needs access to your camera in order to take photos of your receipt."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8de88230-13cf-4bd3-85b1-0ba6f2a7a11b"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/8de88230-13cf-4bd3-85b1-0ba6f2a7a11b"
     }
   }
 }
